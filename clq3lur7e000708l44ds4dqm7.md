@@ -3,6 +3,7 @@ title: "dₐy ₀₄ ₐws zₑᵣₒ tₒ ₕₑᵣₒ"
 datePublished: Wed Dec 13 2023 10:04:52 GMT+0000 (Coordinated Universal Time)
 cuid: clq3lur7e000708l44ds4dqm7
 slug: dy-ws-z-t
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1702462161500/d99eb618-3d42-4cff-adbf-585ba4982e8f.png
 tags: cloud, aws, cloud-computing, aws-lambda, shubhamlondhe, trainwithshubham, aws-zero-to-hero
 
 ---
