@@ -92,10 +92,6 @@ stages {
 * In the script box, enter the following:
     
 
-**COPY**
-
-**COPY**
-
 ```plaintext
 pipeline {
     agent any
@@ -137,8 +133,6 @@ pipeline {
     
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1703843968916/78a28ae7-1707-4a33-b522-62306b455259.png align="center")
-
-  
 
 ### **Task-02**
 
@@ -199,8 +193,6 @@ pipeline {
     
 * Run your Jenkins job again.
     
-
-  
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1703844137498/8d25eb83-c4e6-4609-9009-6d1373af96e9.png align="center")
 
