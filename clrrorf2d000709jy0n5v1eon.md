@@ -161,38 +161,39 @@ spec:
     * Update the deployment.yml file to include the ConfigMap
         
     * ```plaintext
-            apiVersion: apps/v1
-            kind: Deployment
-            metadata:
-              name: config-todo-app
-              labels:
-                app: todo
-              namespace: todo-app
-            spec:
-              replicas: 2
-              selector:
-                matchLabels:
+              apiVersion: apps/v1
+              kind: Deployment
+              metadata:
+                name: config-todo-app
+                labels:
                   app: todo
-              template:
-                metadata:
-                  labels:
+                namespace: todo-app
+              spec:
+                replicas: 2
+                selector:
+                  matchLabels:
                     app: todo
-                spec:
-                  containers:
-                  - name: todo
-                    image: trainwithshubham/django-todo:latest
-                    ports:
-                    - containerPort: 8000
-                    env:
-                      - name: TODO_APP
-                        valueFrom:
-                          configMapKeyRef:
-                            name: todo-app
-                            key: application
+                template:
+                  metadata:
+                    labels:
+                      app: todo
+                  spec:
+                    containers:
+                    - name: todo
+                      image: trainwithshubham/django-todo:latest
+                      ports:
+                      - containerPort: 8000
+                      env:
+                        - name: TODO_APP
+                          valueFrom:
+                            configMapKeyRef:
+                              name: todo-app
+                              key: application
         ```
         
         * Apply the updated deployment using the command:
             
+        
     
     ```plaintext
         kubectl apply -f deployment.yml -n <namespace-name>
@@ -247,11 +248,12 @@ spec:
         Lets apply the changes of `secret.yaml` :
         
     * ```plaintext
-          kubectl apply -f secret.yaml -n <namespace-name>
+            kubectl apply -f secret.yaml -n <namespace-name>
         ```
         
         * Update the `deployment.yaml` file to include the Secret
             
+        
     
     ```plaintext
         apiVersion: apps/v1
@@ -313,7 +315,12 @@ spec:
     kubectl exec -it <pod-name> -n <namespace-name> -- bash
     ```
     
-    That's it! You've just completed the task. 🎉
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706094915659/f73a7132-e389-4ccf-96e4-32620a56f322.png align="center")
+    
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706094919880/28ddf3ca-e486-4524-95ad-8a768c3bfda2.png align="center")
+    
+
+* That's it! You've just completed the task. 🎉
     
     Thank you so much for taking the time to read till the end! Hope you found this blog informative and helpful.
     
